@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task 14</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+</head>
+<body>
+    <script>
+        function getValues()
+        {
+            var arr = [5, 4, 3, 2, 1];
+
+            console.log("Array: " + arr);
+            console.log("Sum: " + sumArray(arr));
+        }
+
+        function sumArray(arr)
+        {
+            var arrSum = arr.reduce
+            (
+                function(acc, val)
+                {
+                    return acc + val;
+                }
+            );
+
+            return arrSum;
+        }
+
+        getValues();
+    </script>
+</body>
+</html>

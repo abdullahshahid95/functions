@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+</head>
+<body>
+    
+    <script>
+        function operation(num1, num2, operator)
+        {
+            if(operator == "+")
+                return num1 + " + " + num2 + " = " + (parseInt(num1) + parseInt(num2));
+            
+            else if(operator == "-")
+                return num1 + " - " + num2 + " = " + (parseInt(num1) - parseInt(num2));
+            
+            else if(operator == "*")
+                return num1 + " x " + num2 + " = " + (parseInt(num1) * parseInt(num2));
+
+            else if(operator == "/")
+                return num1 + " / " + num2 + " = " + (parseInt(num1) / parseInt(num2));
+            
+            else
+                return "Invalid Operator";
+        }
+        
+        console.log
+        (
+            operation
+            (
+                prompt("Enter 1st number"), 
+                prompt("Enter 2nd number"),
+                prompt("Enter operator")
+            )
+        );
+    </script>
+</body>
+</html>

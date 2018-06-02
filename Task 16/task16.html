@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task 16</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+</head>
+<body>
+    <!-- Input fields for numbers -->
+    <h3>Power of a number</h3>
+    Base <input type="text" id="base"><br><br>
+    Power <input type="text" id="power"><br><br>
+    <button onclick="getValues()">Find</button><br>
+    <h4 id="result"></h4>
+    <script>
+        function getValues()
+        {
+            var base = parseFloat(document.getElementById("base").value);
+            var power = parseFloat(document.getElementById("power").value);
+
+            var result = findPower(base, power);
+
+            var resultHeading = document.getElementById("result");
+            resultHeading.innerHTML = "";
+
+            resultHeading.innerHTML = base.toString() + 
+                                    "<sup>" + power.toString() + "</sup>" + 
+                                    " = " + 
+                                    result.toString();
+
+            // var baseNode = document.createTextNode(base);
+            // resultHeading.appendChild(baseNode);
+
+            // var superscript = document.createElement("sup");
+            // var powerNode = document.createTextNode(power);
+            // superscript.appendChild(powerNode);
+
+            // resultHeading.appendChild(superscript);
+
+            // var resultNode = document.createTextNode(" = " + result);
+            // resultHeading.appendChild(resultNode);
+        }
+
+        function findPower(base, power)
+        {
+            return Math.pow(base, power);
+        }
+    </script>
+</body>
+</html>
