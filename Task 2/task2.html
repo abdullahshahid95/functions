@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+</head>
+<body>
+    
+    <script>
+        function displayDateTime() 
+        {
+            var today = new Date();
+            var date = today.getDate() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+            console.log("Date: " + date);
+            console.log("Time: " + time);
+        }
+
+        displayDateTime();
+    </script>
+</body>
+</html>
